@@ -1,0 +1,30 @@
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\obj\Debug\TQS_Project.csprojResolveAssemblyReference.cache
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\TQS_Project.dll.config
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\TQS_Project.dll
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\TQS_Project.pdb
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\Antlr3.Runtime.dll
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\Newtonsoft.Json.dll
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\System.Web.Optimization.dll
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\WebActivator.dll
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\WebGrease.dll
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\Antlr3.Runtime.pdb
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\Newtonsoft.Json.xml
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\bin\System.Web.Optimization.xml
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\obj\Debug\TQS_Project.dll
+C:\Users\Joaquim Sousa Pinto\Dropbox\FamiliaSousaPinto\Renato\TQS_Project\TQS_Project\obj\Debug\TQS_Project.pdb
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\TQS_Project.dll.config
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\TQS_Project.dll
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\TQS_Project.pdb
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\Antlr3.Runtime.dll
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\Newtonsoft.Json.dll
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\System.Web.Optimization.dll
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\WebActivator.dll
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\WebGrease.dll
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\Antlr3.Runtime.pdb
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\Newtonsoft.Json.xml
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\bin\System.Web.Optimization.xml
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\obj\Debug\TQS_Project.csprojResolveAssemblyReference.cache
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\obj\Debug\TQS_Project.dll
+C:\Users\renat\Desktop\TQS_Project\TQS_Project\obj\Debug\TQS_Project.pdb

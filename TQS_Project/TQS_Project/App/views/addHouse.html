@@ -1,0 +1,97 @@
+﻿<section>
+    <div class="bannerTop"></div>
+    <div class="container">
+        <div class="page-header">
+            <h2><span data-bind="text:displayName"></span> [<span data-bind="text: ID"></span>]</h2>
+        </div>
+        <blockquote data-bind="text:description" class="small"></blockquote>
+        <h3><span>Informação do Imóvel</span></h3>
+        <div class="row">
+            <div class="col-lg-3">Estado do Imóvel:</div>
+            <div class="col-lg-9">
+                <select class="form-control" data-bind="value: Estado">
+                    <option>Disponível</option>
+                    <option>Reservado</option>
+                    <option>Vendido</option>
+                </select>
+            </div>
+            <div class="col-lg-3">Tipo de Imóvel:</div>
+            <div class="col-lg-9">
+                <select class="form-control" data-bind="value: TipoDeImovel">
+                    <option>T0</option>
+                    <option>T1</option>
+                    <option>T2</option>
+                    <option>T2-Duplex</option>
+                    <option>T3</option>
+                    <option>T3-Duplex</option>
+                    <option>T4</option>
+                    <option>T4-Duplex</option>
+                    <option>Moradia</option>
+                </select>
+            </div>
+            <div class="col-lg-3">Condição:</div>
+            <div class="col-lg-9">
+                <select class="form-control" data-bind="value: Condicao">
+                    <option>Novo</option>
+                    <option>Usado</option>
+                    <option>Restaurado</option>
+                </select>
+            </div>
+            <div class="col-lg-3">Tipologia:</div>
+            <div class="col-lg-9">
+                <select class="form-control" data-bind="value: Tipologia">
+                    <option>Aluguer</option>
+                    <option>Venda</option>
+                    <option>Permuta</option>
+                    <option>Trespasse</option>
+                </select>
+            </div>
+            <div class="col-lg-3">Preço:</div>
+            <div class="col-lg-9">
+                <div class="input-group">
+                    <input type="text" class="form-control" data-bind="value: Preco" />
+                    <span class="input-group-addon" style="min-width:45px">€</span>
+                </div>
+            </div>
+            <div class="col-lg-3">Área:</div>
+            <div class="col-lg-9">
+                <div class="input-group">
+                    <input type="text" class="form-control" data-bind="value: Area" />
+                    <span class="input-group-addon" style="min-width:45px">m<sup>2</sup></span>
+                </div>
+            </div>
+            <div class="col-lg-12">Localização:</div>
+            <div class="col-lg-3 col-lg-push-1">Distrito:</div>
+            <div class="col-lg-9">
+                <input type="text" class="form-control" data-bind="value: Distrito" />
+            </div>
+            <div class="col-lg-3 col-lg-push-1">Concelho:</div>
+            <div class="col-lg-9">
+                <input type="text" class="form-control" data-bind="value: Concelho" />
+            </div>
+            <div class="col-lg-3 col-lg-push-1">Freguesia:</div>
+            <div class="col-lg-9">
+                <input type="text" class="form-control" data-bind="value: Freguesia" />
+            </div>
+            <div class="col-lg-3 col-lg-push-1">GPS [Lat]:</div>
+            <div class="col-lg-3">
+                <input type="text" class="form-control" data-bind="value: GPS()[0]" />
+            </div>
+            <div class="col-lg-3 col-lg-push-1">GPS [Long]:</div>
+            <div class="col-lg-3">
+                <input id="txt_GPS_Long" type="text" class="form-control" data-bind="value: GPS()[1]" />
+            </div>
+            <div class="col-lg-12">Descrição:</div>
+            <div class="col-lg-11 col-lg-push-1">
+                <textarea id="txt_Descricao" class="form-control" data-bind="html: convertTxt()" rows="4"></textarea>
+            </div>
+            <div class="col-lg-12">
+                <hr />
+            </div><div class="col-lg-3"></div>
+            <div class="col-lg-9">
+                <input type="submit" class="btn btn-primary" value="Guardar" id="saveButton" />
+                <input type="reset" class="btn btn-default" value="Cancelar" id="resetButton" />
+            </div>
+        </div>
+    </div>
+</section>

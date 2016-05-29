@@ -1,0 +1,59 @@
+﻿<section>
+    <div class="container">
+        <div class="page-header">
+            <h2 data-bind="text:displayName"></h2>
+        </div>
+        <blockquote data-bind="text:description" class="small"></blockquote>
+        <div id="userNotLoggedIn" class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4><i class="fa fa-user"></i> Credenciais do utilizador:</h4></div>
+                <div class="panel-body">
+                    <form data-bind="submit: checkIdentity">
+                        <div class="form-group row">
+                            <label for="InputEmail" class="col-md-4 text-right form-control-static">Email address</label>
+                            <div class="col-md-8"><input type="email" class="form-control" id="InputEmail" placeholder="Email" data-bind="value:email" required></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="InputPassword" class="col-md-4 text-right form-control-static">Password</label>
+                            <div class="col-md-8"><input type="password" class="form-control" id="InputPassword" placeholder="Password" data-bind="value:passwd" required></div>
+                        </div>
+                        <!-- ko if : errorMessage().length > 0 -->
+                        <div class="form-group row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-8 form-control-static text-danger" data-bind="html : errorMessage"></div>
+                        </div>
+                        <!-- /ko -->
+                        <div class="form-group row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-8 form-control-static">[<i class="fa fa-user-plus"></i> <a href="#register">Novo utilizador</a>]</div>
+                        </div>
+                        <div class="row">
+                            <hr />
+                            <div class="text-center col-md-offset-4"><button type="submit" class="btn btn-primary">Validar</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="userLoggedIn" class="col-md-8 col-md-offset-2 hidden">
+            <table class="table table-striped table-condensed">
+                <thead>
+                    <tr><th class="col-md-3 text-center">Atributo</th><th class="text-center">Valor</th></tr>
+                </thead>
+                <tbody>
+                    <tr><th class="text-right">Nome:</th><td data-bind="html: loggedUser().firstName + ' ' + loggedUser().lastName"></td></tr>
+                    <tr><th class="text-right">Email:</th><td data-bind="text: loggedUser().email"></td></tr>
+                    <tr><th class="text-right">Role:</th><td data-bind="text: loggedUser().funcao"></td></tr>
+                    <tr><th class="text-right">Morada:</th><td data-bind="html: loggedUser().morada.replace('\\n','&lt;br/&gt;')"></td></tr>
+                    <tr><th class="text-right">Telefone:</th><td data-bind="text: loggedUser().contacto"></td></tr>
+                    <tr><th class="text-right">NIF:</th><td data-bind="text: loggedUser().nif"></td></tr>
+                    <tr><th class="text-right">Data de nascimento:</th><td data-bind="text: loggedUser().dataNasc"></td></tr>
+                    <tr><th class="text-right">Sexo:</th><td><i data-bind="attr: {class: loggedUser().sex =='M' ? 'fa fa-mars':'fa fa-venus'}"></i></td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><th></th><td class="text-center"><button class="btn btn-primary" data-bind="click: logout">Terminar a sessão</button></td></tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>

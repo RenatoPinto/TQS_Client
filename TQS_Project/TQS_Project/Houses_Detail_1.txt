@@ -1,0 +1,18 @@
+﻿{
+    "ID": "1",
+    "Estado": "Reservado",
+    "TipoDeImovel": "T2",
+    "Condicao": "Usado",
+    "Tipologia": "Aluguer",
+    "Preco": "300",
+    "Area": "90",
+    "GPS": [
+        40.6041784501165,
+        -8.673534393310547
+    ],
+    "Distrito": "Aveiro",
+    "Concelho": "Ílhavo",
+    "Freguesia": "Ílhavo",
+    "Fotos": ["1_01.jpg", "1_02.jpg", "1_03.jpg", "1_04.jpg", "1_05.jpg" ],
+	"Descricao" : "Iudico bonorum vocibus duo no, mei in zril scripta aliquid. Ea sea partem consequat adipiscing, etiam numquam vituperatoribus eos et. Vim partem putent aliquip cu, an pro verear iriure. Et quis ullum pro, verear scripta virtute mea in. Vitae aperiam vis et, inani quidam splendide pro ex, sea virtute civibus interpretaris in. Nec et eius apeirian, eu tale invidunt concludaturque quo, mei cu graecis habemus adipiscing."
+}

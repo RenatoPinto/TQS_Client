@@ -1,0 +1,49 @@
+﻿<div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-home"></i>
+                <span>imoQQCoisa</span>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" data-bind="foreach: router.navigationModel">
+                <li data-bind="css: { active: isActive }">
+                    <a data-bind="attr: { href: hash }, text: title"></a>
+                </li>
+            </ul>
+            <div class="nav-divider"></div>
+            <div class="navbar-right">
+                <a id="userPicture" href="#login" style="float:right"></a>
+                <div style="margin-right:10px; height:40px; float:right; padding-top:10px;">
+                    <div id="userArea" class="hidden left top">
+                        <span id="userEmail"></span> | <span id="userRole"></span><br />
+                        <span id="userName"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="nav-divider"></div>
+            <form id="search" class="navbar-form navbar-right" role="search">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="Pesquisa" data-bind="value: searchText()" id="searchText">
+                    <button type="submit" class="btn input-group-addon" data-bind="event : { click: search }"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="page-host" data-bind="router: { transition:'entrance' }"></div>
+    <footer class="footer">
+        <div class="container small">
+            Teste e Qualidade de Software, 2015/16<br />
+            <small>&copy; [Renato Pinto, André Bastos, Ana Mendes, Sandra Silva &amp; Marina Wischert]</small>
+        </div>
+    </footer>
+</div>

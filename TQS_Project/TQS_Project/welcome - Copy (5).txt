@@ -1,0 +1,59 @@
+﻿[
+    {
+        "ID": "0",
+        "Estado": "Disponível",
+        "TipoDeImovel": "T3",
+        "Condicao": "Novo",
+        "Tipologia": "Venda",
+        "Preco": "150.000",
+        "Area": "120",
+        "Localizacao": {
+            "GPS": [
+                40.63896734381723,
+                -8.653450012207031
+            ],
+            "Distrito": "Aveiro",
+            "Concelho": "Aveiro",
+            "Freguesia": "Glória"
+        },
+        "Fotos": [ ]
+    },
+    {
+        "ID": "1",
+        "Estado": "Reservado",
+        "TipoDeImovel": "T2",
+        "Condicao": "Usado",
+        "Tipologia": "Aluguer",
+        "Preco": "300",
+        "Area": "90",
+        "Localizacao": {
+            "GPS": [
+                40.6041784501165,
+                -8.673534393310547
+            ],
+            "Distrito": "Aveiro",
+            "Concelho": "Ílhavo",
+            "Freguesia": "Ílhavo"
+        },
+        "Fotos": [ ]
+    },
+    {
+        "ID": "2",
+        "Estado": "Vendido",
+        "TipoDeImovel": "Duplex",
+        "Condicao": "Restaurado",
+        "Tipologia": "Permuta",
+        "Preco": "220.000",
+        "Area": "150",
+        "Localizacao": {
+            "GPS": [
+                40.665014570215,
+                -8.390121459960938
+            ],
+            "Distrito": "Aveiro",
+            "Concelho": "Águeda",
+            "Freguesia": "Aguada de Cima"
+        },
+        "Fotos": [ ]
+    }
+]

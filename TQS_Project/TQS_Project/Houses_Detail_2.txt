@@ -1,0 +1,18 @@
+﻿{
+    "ID": "2",
+    "Estado": "Vendido",
+    "TipoDeImovel": "Moradia",
+    "Condicao": "Restaurado",
+    "Tipologia": "Permuta",
+    "Preco": "220.000",
+    "Area": "150",
+   "GPS": [
+        40.665014570215,
+        -8.390121459960938
+    ],
+    "Distrito": "Aveiro",
+    "Concelho": "Águeda",
+    "Freguesia": "Aguada de Cima",
+    "Fotos": ["2_01.jpg", "2_02.jpg", "2_03.jpg", "2_04.jpg", "2_05.jpg" ],
+	"Descricao" : "Lorem ipsum dolor sit amet, id vel amet animal omittam. Ut clita salutandi eam, et sit cibo admodum pertinax, vix audiam habemus ut. Iusto appareat repudiandae ut sea, ei ancillae invidunt nec. Et qui tota forensibus. Vivendum senserit salutatus pri no. Nec id vero dolore integre, eos et graecis apeirian praesent, duo meliore alienum ut. Te cum eius scribentur, inermis dolores id sea.<br>Quem solum at ius. Et vix congue dolorem accusam. At phaedrum delicatissimi est, sint ludus vix ex. Duo ut solet decore. Dicant reformidans est an. Duo reque ceteros eleifend ad."
+}

@@ -1,0 +1,18 @@
+﻿{
+    "ID": "0",
+    "Estado": "Disponível",
+    "TipoDeImovel": "T3",
+    "Condicao": "Novo",
+    "Tipologia": "Venda",
+    "Preco": "150.000",
+    "Area": "120",
+    "GPS": [
+        40.63896734381723,
+        -8.653450012207031
+    ],
+    "Distrito": "Aveiro",
+    "Concelho": "Aveiro",
+    "Freguesia": "Glória",
+    "Fotos": ["0_01.jpg", "0_02.jpg", "0_03.jpg", "0_04.jpg", "0_05.jpg", "0_06.jpg" ],
+	"Descricao" : "An purto facilisis has, vis in ubique adipiscing. Enim invidunt eam ne, illum mandamus percipitur an per, ad falli eloquentiam has. Sit ullum nihil laudem no. Mei deleniti detraxit repudiare cu. Congue nostrud consequat eu mei.<br>Cu his sumo hinc ubique. His ad tamquam maluisset, homero gubergren nec ne. Vis bonorum tincidunt signiferumque ne. Per an quod facer democritum, mei consul option ut. Ne nec liber voluptua. Te nam congue corrumpit, et vix diceret recteque."
+}

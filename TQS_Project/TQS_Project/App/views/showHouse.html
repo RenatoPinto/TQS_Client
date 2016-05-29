@@ -1,0 +1,102 @@
+﻿<section>
+    <link rel="stylesheet" href="../../Content/magnific-popup.css" type="text/css" />
+    <div class="bannerTop"></div>
+    <div class="container">
+        <div class="page-header">
+            <h2><span data-bind="text:displayName"></span> [<span data-bind="text: ID"></span>]</h2>
+        </div>
+        <blockquote data-bind="text:description" class="small"></blockquote>
+        <h3><span>Informação do Imóvel</span></h3>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="col-lg-3">Estado do Imóvel:</div> <div class="col-lg-9" data-bind="text: Estado"></div>
+                <div class="col-lg-3">Tipo de Imóvel:</div> <div class="col-lg-9" data-bind="text: TipoDeImovel"></div>
+                <div class="col-lg-3">Condição:</div> <div class="col-lg-9" data-bind="text: Condicao"></div>
+                <div class="col-lg-3">Tipologia:</div> <div class="col-lg-9" data-bind="text: Tipologia"></div>
+                <div class="col-lg-3">Preço:</div> <div class="col-lg-9" data-bind="text: Preco"></div>
+                <div class="col-lg-3">Área:</div> <div class="col-lg-9" data-bind="html: Area"></div>
+                <div class="col-lg-12">Localização:</div>
+                <div class="col-lg-3 col-lg-push-1">Distrito:</div> <div class="col-lg-9" data-bind="text: Distrito"></div>
+                <div class="col-lg-3 col-lg-push-1">Concelho:</div> <div class="col-lg-9" data-bind="text: Concelho"></div>
+                <div class="col-lg-3 col-lg-push-1">Freguesia:</div> <div class="col-lg-9" data-bind="text: Freguesia"></div>
+                <div class="col-lg-12">Descrição:</div> 
+                <div class="col-lg-11 col-lg-push-1" data-bind="html: Descricao"></div>
+            </div>
+            <div class="col-lg-4">
+                <div id="map" style="height:240px;width:360px;margin:auto;"></div>
+            </div>
+        </div>
+        <h3>Galeria de imagens</h3>
+        <div class=" row">
+            <div class="popup-gallery">
+                <div class="col-lg-12">
+                    <!-- ko foreach: Fotos -->
+                    <div class="col-lg-2">
+                        <a data-bind="attr: { href : '../../images/'+ $data}"><img data-bind="attr: { src : '../../images/'+ $data }" class="img-thumbnail" /></a>
+                    </div>
+                    <!-- /ko -->
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <hr />
+        </div>
+        <div class="col-lg-12 text-right">
+            <button class="btn btn-primary btn-circle" data-toggle="modal" data-target="#myModalPersonData"><i class="fa fa-info-circle"></i></button>
+            <button class="btn btn-default btn-circle" data-bind="event : {click : gotoAdd }"><i class="fa fa-plus"></i></button>
+            <button class="btn btn-default btn-circle" data-bind="event : {click : gotoEdit }"><i class="fa fa-edit"></i></button>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModalPersonData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="myModalLabel">Pedido de informação sobre imóvel</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-2 form-control-static text-right">Nome:</div>
+                        <div class="col-xs-10">
+                            <input type="text" id="PersonData_Name" placeholder="Digite o seu nome" class="form-control" value="aaaaaaaaaa" />
+                            <div id="PersonData_Name_Error" class="no_error form-control-static text-danger">&nbsp;<i class="fa fa-exclamation-triangle"></i> O nome deve ter, pelo menos, 10 letras!&nbsp;</div>
+                        </div>
+                        <div class="col-xs-2 form-control-static text-right">Email:</div>
+                        <div class="col-xs-10">
+                            <input type="text" id="PersonData_Email" placeholder="Digite o seu email" class="form-control" value="a@b.com" />
+                            <div id="PersonData_Email_Error" class="no_error form-control-static text-danger">&nbsp;<i class="fa fa-exclamation-triangle"></i> Deve introduzir um endereço de email válido!&nbsp;</div>
+                        </div>
+                        <div class="col-xs-2 form-control-static text-right">Telefone:</div>
+                        <div class="col-xs-10">
+                            <input type="text" id="PersonData_Telefone" placeholder="Digite o seu número de telefone" class="form-control" value="123456789" />
+                            <div id="PersonData_Telefone_Error" class="no_error form-control-static text-danger">&nbsp;<i class="fa fa-exclamation-triangle"></i> Deve introduzir um número de telefone válido!&nbsp;</div>
+                        </div>
+                        <div class="col-xs-2 form-control-static text-right">Comentários:</div>
+                        <div class="col-xs-10"><textarea id="PersonData_Comentarios" rows="4" cols="80" placeholder="Insira aqui os seus comentários/pedidos de informação" class="form-control"></textarea></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" id="PersonDataSend" class="btn btn-primary btn-circle" value="Enviar pedido" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="myModalLabel">Contacto efetuado com sucesso</h2>
+                </div>
+                <div class="modal-body">
+                    <div data-bind="html:SuccessMessage()"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-circle" data-dismiss="modal"><i class="fa fa-close"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

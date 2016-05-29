@@ -1,0 +1,29 @@
+﻿[
+    {
+        "ID": "0",
+        "TipoDeImovel": "T3",
+        "Tipologia": "Venda",
+        "Preco": "150.000",
+        "Distrito": "Aveiro",
+        "Concelho": "Aveiro",
+        "Freguesia": "Glória"
+    },
+    {
+        "ID": "1",
+        "TipoDeImovel": "T2",
+        "Tipologia": "Aluguer",
+        "Preco": "300",
+        "Distrito": "Aveiro",
+        "Concelho": "Ílhavo",
+        "Freguesia": "Ílhavo"
+	},
+    {
+        "ID": "2",
+        "TipoDeImovel": "Duplex",
+        "Tipologia": "Permuta",
+        "Preco": "220.000",
+        "Distrito": "Aveiro",
+        "Concelho": "Águeda",
+        "Freguesia": "Aguada de Cima"
+	}
+]

@@ -1,0 +1,80 @@
+﻿<section>
+    <div class="container">
+    <div class="page-header"><h3 data-bind="text:displayName"></h3></div>
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h4><i class="fa fa-user-plus"></i> Dados do utilizador:</h4></div>
+                <div class="panel-body">
+                    <form data-bind="submit: submitForm">
+                        <div class="form-group row">
+                            <label for="InputEmail" class="col-md-4 text-right form-control-static">Endereço de email:</label>
+                            <div class="col-md-7"><input type="email" class="form-control" id="InputEmail" placeholder="Email" data-bind="value: theUserData.email" required></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="InputPassword1" class="col-md-4 text-right form-control-static">Palavra-passe:</label>
+                            <div class="col-md-7"><input type="password" class="form-control " id="InputPassword1" placeholder="Password (Min: 7 carateres)" data-bind="value: theUserData.passwd" required></div>
+                            <div class="col-md-1" id="InputPassword1Err"></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="InputPassword2" class="col-md-4 text-right form-control-static">Palavra-passe (repetição):</label>
+                            <div class="col-md-7"><input type="password" class="form-control" id="InputPassword2" placeholder="Password (repetição)" data-bind="value: theUserData.checkPasswd" required></div>
+                            <div class="col-md-1" id="InputPassword2Err"></div>
+                        </div>
+                        <div class="row"><hr class="col-md-offset-4" /></div>
+                        <div class="form-group row">
+                            <label for="InputFName" class="col-md-4 text-right form-control-static">Primeiro nome:</label>
+                            <div class="col-md-7"><input type="text" class="form-control" id="InputFName" placeholder="Primeiro Nome" data-bind="value: theUserData.firstName" required></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="InputLName" class="col-md-4 text-right form-control-static">Último nome:</label>
+                            <div class="col-md-7"><input type="text" class="form-control" id="InputLName" placeholder="Último Nome" data-bind="value: theUserData.lastName" required></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="InputMorada" class="col-md-4 text-right form-control-static">Morada:</label>
+                            <div class="col-md-7"><textarea class="form-control" id="InputMorada" placeholder="Morada" rows="3" data-bind="value: theUserData.morada" required /></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="InputTelefone" class="col-md-4 text-right form-control-static">Telefone:</label>
+                            <div class="col-md-7"><input type="tel" class="form-control" id="InputTelefone" placeholder="Telefone" data-bind="value: theUserData.telefone" required></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="InputDataNascimento" class="col-md-4 text-right form-control-static">Data de Nascimento:</label>
+                            <div class=" col-md-7">
+                                <div class='input-group date' data-provider="datepicker">
+                                    <input type="text" id="InputDataNascimento" class="form-control" data-date-format="yyyy-mm-dd" placeholder="Data Nascimento (Formato: aaaa-mm-dd)" data-bind="value: theUserData.dataNascimento" required />
+                                    <span class="input-group-addon">
+                                        <span class="fa fa-calendar-o"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="InputSexo" class="col-md-4 text-right form-control-static">Sexo:</label>
+                            <div class="col-md-7">
+                                <select type="tel" class="form-control" id="InputSexo" placeholder="Sexo" data-bind="value: theUserData.sexo" required>
+                                    <option value="">Selecionar</option>
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Feminino</option>
+                                </select>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="InputNIF" class="col-md-4 text-right form-control-static">NIF:</label>
+                            <div class="col-md-7"><input type="number" class="form-control" id="InputNIF" placeholder="NIF" data-bind="value: theUserData.NIF" required></div>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="row">
+                            <hr />
+                            <div class="text-center col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">Validar</button>
+                                <button type="reset" class="btn btn-default">Limpar</button>
+                            </div>
+                        </div>
+                    </form>
+</div>
+            </div>
+        </div>
+    </div>
+
+</section>
